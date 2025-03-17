@@ -10,17 +10,27 @@ jobs:
     runs-on: ubuntu-latest
     name: generate-github-profile-3d-contrib
     steps:
-      - uses: actions/checkout@v4
-      - uses: yoshi389111/github-profile-3d-contrib@0.6.0
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Remove old 3D Contribution Graph
+        run: |
+          [ -d "profile-3d-contrib" ] && rm -rf profile-3d-contrib
+
+      - name: Generate GitHub 3D Contribution Graph
+        uses: yoshi389111/github-profile-3d-contrib@0.6.0
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           DAYS: 180
+
       - name: Commit & Push
         run: |
           git config user.name j-hann
           git config user.email j.han77055@gmail.com
           git add -A .
-          git commit -m "✨ Feat : Update 3D Contribution Graph"
-          git pull origin main --rebase
-          git push origin main
+          git commit -m "✨ Feat : Update 3D Contribution Graph" || echo "No changes to commit"
+          git pull origin main --rebase || echo "Pull failed, skipping rebase."
+          git push origin main || echo "No changes to push."
