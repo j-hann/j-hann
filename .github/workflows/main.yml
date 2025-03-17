@@ -20,6 +20,7 @@ jobs:
         run: |
           git config user.name j-hann
           git config user.email j.han77055@gmail.com
+          git pull origin main --rebase
           git add -A .
           git commit -m "✨ Feat : Update 3D Contribution Graph"
           git push origin main
