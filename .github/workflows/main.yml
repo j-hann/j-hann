@@ -5,6 +5,13 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
+env:
+  MY_TOKEN: ${{ secrets.TOKEN }}
+  MY_USERNAME: ${{ github.repository_owner }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,9 +28,9 @@ jobs:
 
       - name: Generate GitHub 3D Contribution Graph
         uses: yoshi389111/github-profile-3d-contrib@0.6.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
+        with:
+          token: ${{ env.MY_TOKEN }}
+          user_name: ${{ env.MY_USERNAME }}
 
       - name: Commit & Push
         run: |
@@ -33,3 +40,5 @@ jobs:
           git commit -m "✨ Feat : Update 3D Contribution Graph" || echo "No changes to commit"
           git pull origin main --rebase || echo "Pull failed, skipping rebase."
           git push origin main || echo "No changes to push."
+          
+
