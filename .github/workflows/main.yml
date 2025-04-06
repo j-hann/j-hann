@@ -10,7 +10,7 @@ permissions:
 
 env:
   GITHUB_TOKEN: ${{ secrets.TOKEN }}
-  MY_USERNAME: j-hann
+  USERNAME: j-hann
 
 jobs:
   build:
@@ -30,7 +30,10 @@ jobs:
         uses: yoshi389111/github-profile-3d-contrib@0.6.0
         with:
           token: ${{ env.GITHUB_TOKEN }}
-          user_name: j-hann
+          user_name: ${{ env.USERNAME }}
+        env:
+          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+          USERNAME: ${{ env.USERNAME }}
 
       - name: Commit & Push
         run: |
