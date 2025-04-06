@@ -18,6 +18,21 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Check for recent public contributions
+        id: check
+        run: |
+          count=$(curl -s -H "Authorization: token ${{ secrets.TOKEN }}" \
+            https://api.github.com/users/j-hann/events/public \
+            | jq '[.[] | select(.type=="PushEvent")] | length')
+          
+          echo "Public PushEvent Count: $count"
+          if [ "$count" -eq "0" ]; then
+            echo "No recent public pushes. Skipping."
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Remove old 3D Contribution Graph
         run: |
           [ -d "profile-3d-contrib" ] && rm -rf profile-3d-contrib
