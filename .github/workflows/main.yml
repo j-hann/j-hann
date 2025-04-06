@@ -9,8 +9,8 @@ permissions:
   contents: read
 
 env:
-  MY_TOKEN: ${{ secrets.TOKEN }}
-  MY_USERNAME: ${{ github.repository_owner }}
+  GITHUB_TOKEN: ${{ secrets.TOKEN }}
+  MY_USERNAME: j-hann
 
 jobs:
   build:
@@ -29,8 +29,8 @@ jobs:
       - name: Generate GitHub 3D Contribution Graph
         uses: yoshi389111/github-profile-3d-contrib@0.6.0
         with:
-          token: ${{ env.MY_TOKEN }}
-          user_name: ${{ env.MY_USERNAME }}
+          token: ${{ env.GITHUB_TOKEN }}
+          user_name: j-hann
 
       - name: Commit & Push
         run: |
@@ -40,5 +40,3 @@ jobs:
           git commit -m "✨ Feat : Update 3D Contribution Graph" || echo "No changes to commit"
           git pull origin main --rebase || echo "Pull failed, skipping rebase."
           git push origin main || echo "No changes to push."
-          
-
