@@ -28,12 +28,12 @@ jobs:
 
       - name: Generate GitHub 3D Contribution Graph
         uses: yoshi389111/github-profile-3d-contrib@0.6.0
-        with:
-          token: ${{ env.GITHUB_TOKEN }}
-          user_name: ${{ env.USERNAME }}
         env:
           GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
           USERNAME: ${{ env.USERNAME }}
+        with:
+          token: ${{ env.GITHUB_TOKEN }}
+          user_name: ${{ env.USERNAME }}
 
       - name: Commit & Push
         run: |
