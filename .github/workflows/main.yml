@@ -39,6 +39,7 @@ jobs:
 
       - name: Generate GitHub 3D Contribution Graph
         uses: yoshi389111/github-profile-3d-contrib@0.6.0
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           USERNAME: j-hann
