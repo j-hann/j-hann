@@ -20,7 +20,7 @@
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=j-hann&layout=compact&bg_color=60,eee0ff,9db9fb&title_color=ffffff&text_color=ffffff)
 
 ## 🌳
-![GitHub 3D Contribution](https://raw.githubusercontent.com/j-hann/j-github-profile-3d-contrib-custom/main/profile-3d-contrib/profile-south-season-animate.svg?v=2)
+![GitHub 3D Contribution](https://raw.githubusercontent.com/j-hann/j-github-profile-3d-contrib-custom/main/profile-3d-contrib/profile-green-animate.svg)
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:e3e1fe,100:578fff&height=200&section=footer)
 
