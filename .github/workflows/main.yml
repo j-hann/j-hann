@@ -23,8 +23,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencied
-        run: npm insta;;
+      - name: Install dependencies
+        run: npm install
 
       - name: Build the TypeScript project
         run: npm run build
@@ -49,12 +49,11 @@ jobs:
           [ -d "profile-3d-contrib" ] && rm -rf profile-3d-contrib
 
       - name: Generate GitHub 3D Contribution Graph
+        if: steps.check.outputs.skip != 'true'
         uses: j-hann/j-github-profile-3d-contrib-custom@main
-#        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           USERNAME: j-hann
-          SETTING_JSON:
 
       - name: Commit & Push
         run: |
