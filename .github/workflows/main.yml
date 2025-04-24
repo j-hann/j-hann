@@ -39,7 +39,7 @@ jobs:
 
       - name: Generate GitHub 3D Contribution Graph
         uses: gumbobrot/github-profile-3d-contrib@0.7.2
-        continue-on-error: true
+#        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           USERNAME: j-hann
