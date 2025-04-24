@@ -22,7 +22,7 @@
 ## 🌳
 ## 🧩 My GitHub 3D Contribution Graph
 
-![GitHub 3D Contribution](https://raw.githubusercontent.com/j-hann/github_profile_custom/main/main/profile-3d-contrib/profile-green-animate.svg)
+![GitHub 3D Contribution](https://raw.githubusercontent.com/j-hann/j-hann/main/main/profile-3d-contrib/profile-green-animate.svg)
 
 
 
