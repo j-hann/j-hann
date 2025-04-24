@@ -38,7 +38,7 @@ jobs:
           [ -d "profile-3d-contrib" ] && rm -rf profile-3d-contrib
 
       - name: Generate GitHub 3D Contribution Graph
-        uses: gumbobrot/github-profile-3d-contrib@0.7.2
+        uses: j-hann/j-github-profile-3d-contrib-custom@main
 #        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
