@@ -34,6 +34,7 @@ jobs:
           fi
 
       - name: Remove old 3D Contribution Graph
+        if: steps.check.outputs.skip != 'true'
         run: |
           [ -d "profile-3d-contrib" ] && rm -rf profile-3d-contrib
 
