@@ -1,7 +1,7 @@
 name: GitHub-Profile-3D-Contrib
 
 on:
-  schedule: # 03:00 JST == 18:00 UTC
+  schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
@@ -14,7 +14,7 @@ jobs:
     name: generate-github-profile-3d-contrib
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -38,17 +38,18 @@ jobs:
           [ -d "profile-3d-contrib" ] && rm -rf profile-3d-contrib
 
       - name: Generate GitHub 3D Contribution Graph
-        uses: yoshi389111/github-profile-3d-contrib@0.6.0
+        uses: gumbobrot/github-profile-3d-contrib@0.7.2
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           USERNAME: j-hann
+          SETTING_JSON:
 
       - name: Commit & Push
         run: |
           git config user.name j-hann
           git config user.email j.han77055@gmail.com
+          git pull origin main --rebase || echo "Pull failed, skipping rebase."
           git add -A .
           git commit -m "✨ Feat : Update 3D Contribution Graph" || echo "No changes to commit"
-          git pull origin main --rebase || echo "Pull failed, skipping rebase."
           git push origin main || echo "No changes to push."
