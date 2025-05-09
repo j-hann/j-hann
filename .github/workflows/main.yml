@@ -1,40 +1,40 @@
-name: GitHub-Profile-3D-Contrib
-
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-
-permissions:
-  contents: write
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Remove old 3D Contribution Graph
-        if: steps.check.outputs.skip != 'true'
-        run: |
-          [ -d "profile-3d-contrib" ] && rm -rf profile-3d-contrib
-        continue-on-error: true
-
-      - name: Generate GitHub 3D Contribution Graph
-        uses: j-hann/j-github-profile-3d-contrib-custom@main
-        with:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          USERNAME: j-hann
-
-      - name: Commit & Push
-        run: |
-          git config user.name j-hann
-          git config user.email j.han77055@gmail.com
-          git pull origin main --rebase || echo "Pull failed, skipping rebase."
-          git add -A .
-          git commit -m "✨ Feat : Update 3D Contribution Graph" || echo "No changes to commit"
-          git push origin main || echo "No changes to push."
+#name: GitHub-Profile-3D-Contrib
+#
+#on:
+#  schedule:
+#    - cron: "0 0 * * *"
+#  workflow_dispatch:
+#
+#permissions:
+#  contents: write
+#
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#    name: generate-github-profile-3d-contrib
+#    steps:
+#      - name: Checkout Repository
+#        uses: actions/checkout@v3
+#        with:
+#          fetch-depth: 0
+#
+#      - name: Remove old 3D Contribution Graph
+#        if: steps.check.outputs.skip != 'true'
+#        run: |
+#          [ -d "profile-3d-contrib" ] && rm -rf profile-3d-contrib
+#        continue-on-error: true
+#
+#      - name: Generate GitHub 3D Contribution Graph
+#        uses: j-hann/j-github-profile-3d-contrib-custom@main
+#        with:
+#          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+#          USERNAME: j-hann
+#
+#      - name: Commit & Push
+#        run: |
+#          git config user.name j-hann
+#          git config user.email j.han77055@gmail.com
+#          git pull origin main --rebase || echo "Pull failed, skipping rebase."
+#          git add -A .
+#          git commit -m "✨ Feat : Update 3D Contribution Graph" || echo "No changes to commit"
+#          git push origin main || echo "No changes to push."
