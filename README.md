@@ -4,7 +4,7 @@
 
 <br />
 
-[![Gmail](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:j.han77055@gmail.com)
+[![Gmail](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/?view=cm&fs=1&to=j.han77055%40gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/j-hann)
 
 </div>
@@ -46,7 +46,7 @@
 ### [LocalLife](https://github.com/salayo-team)
 
 > 로컬 크리에이터와 청년을 연결하는 AI 적성 추천 기반 지역 체험 플랫폼  
-> 2025 K-Digital Training 해커톤 참가 | 예선 진 프로젝트
+> 2025 K-Digital Training 해커톤 참가 | 예선 진출 프로젝트
 
 - **체험 프로그램**
   - 체험 프로그램 도메인 전반 설계 및 운영 로직 구현
@@ -74,7 +74,7 @@
 - **결제**
   - PortOne(KG이니시스) 연동 결제 생성·검증·환불 기능 구현
   - Redisson 분산 락으로 멘토링 신청 동시성을 제어
-    
+
 <br />
 
 ## GitHub Stats
