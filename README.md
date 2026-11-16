@@ -11,23 +11,6 @@
 
 <br />
 
-## Projects
-
-### ◾ [LocalLife](https://github.com/salayo-team)
-
-> AI 적성 추천 기반 지역 체험 플랫폼  
-> 2025 K-Digital Training 해커톤 참가 · 예선 진출
-
-`체험 프로그램` · `검색` · `DB 인덱스 관리` · `예약·결제` · `결제 이력 관리`
-
-### ◾ [Codeness](https://github.com/codeness-connect4code/codeness)
-
-> 개발자 멘토와 멘티를 연결하는 멘토링 커뮤니티
-
-`멘토링` · `공고 검색 최적화` · `배치·스케줄 처리` · `결제` · `동시성 제어`
-
-<br />
-
 ## Tech Stack
 
 ### Languages
@@ -55,6 +38,23 @@
 ![AWS S3](https://img.shields.io/badge/AWS%20S3-569A31?style=for-the-badge&logo=amazon-s3&logoColor=white)
 ![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=for-the-badge&logo=amazon-ec2&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+
+<br />
+
+## Projects
+
+### ◾ [LocalLife](https://github.com/salayo-team)
+
+> AI 적성 추천 기반 지역 체험 플랫폼  
+> 2025 K-Digital Training 해커톤 참가 · 예선 진출
+
+`체험 프로그램` · `검색` · `DB 인덱스 관리` · `예약·결제` · `결제 이력 관리`
+
+### ◾ [Codeness](https://github.com/codeness-connect4code/codeness)
+
+> 개발자 멘토와 멘티를 연결하는 멘토링 커뮤니티
+
+`멘토링` · `공고 검색 최적화` · `배치·스케줄 처리` · `결제` · `동시성 제어`
 
 <br />
 
