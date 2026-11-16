@@ -11,6 +11,23 @@
 
 <br />
 
+## Projects
+
+### ◾ [LocalLife](https://github.com/salayo-team)
+
+> AI 적성 추천 기반 지역 체험 플랫폼  
+> 2025 K-Digital Training 해커톤 참가 · 예선 진출
+
+`체험 프로그램` · `검색` · `DB 인덱스 관리` · `예약·결제` · `결제 이력 관리`
+
+### ◾ [Codeness](https://github.com/codeness-connect4code/codeness)
+
+> 개발자 멘토와 멘티를 연결하는 멘토링 커뮤니티
+
+`멘토링` · `공고 검색 최적화` · `배치·스케줄 처리` · `결제` · `동시성 제어`
+
+<br />
+
 ## Tech Stack
 
 ### Languages
@@ -38,42 +55,6 @@
 ![AWS S3](https://img.shields.io/badge/AWS%20S3-569A31?style=for-the-badge&logo=amazon-s3&logoColor=white)
 ![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=for-the-badge&logo=amazon-ec2&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-
-<br />
-
-## Projects
-
-### [LocalLife](https://github.com/salayo-team)
-
-> 로컬 크리에이터와 청년을 연결하는 AI 적성 추천 기반 지역 체험 플랫폼  
-> 2025 K-Digital Training 해커톤 참가 | 예선 진출 프로젝트
-
-- **체험 프로그램**
-  - 체험 프로그램 도메인 전반 설계 및 운영 로직 구현
-- **검색**
-  - QueryDSL, MySQL Full-Text Search, Ngram parser 기반 검색·정렬 구조 설계
-- **DB 관리**
-  - Flyway 기반 DB 인덱스 및 스키마 변경 이력 관리
-- **예약·결제**
-  - 예약 상태 흐름(신청·거절·취소) 및 검증 로직 설계
-  - PortOne API 연동 결제·환불·검증과 결제 이력 관리 구조 구축
-
-<br />
-
-### [Codeness](https://github.com/codeness-connect4code/codeness)
-
-> 개발자 멘토와 멘티를 연결하는 멘토링 커뮤니티 서비스
-
-- **멘토링**
-  - 멘토링 도메인 전반 설계 및 로직 구현
-- **멘토링 공고 검색**
-  - QueryDSL 기반 동적 검색을 구현하고, JMeter 부하 테스트 결과를 바탕으로 Full-Text Index 적용
-- **배치·스케줄 처리**
-  - Flyway로 인덱스 변경을 관리하고, Spring Batch로 삭제 공고 데이터 정리 및 지난 멘토링 일정 만료 처리 자동화
-  - 스케줄링 기반 미완료 결제 데이터 자동 정리 기능 구현
-- **결제**
-  - PortOne(KG이니시스) 연동 결제 생성·검증·환불 기능 구현
-  - Redisson 분산 락으로 멘토링 신청 동시성을 제어
 
 <br />
 
