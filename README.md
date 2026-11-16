@@ -1,31 +1,127 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:e3e1fe,100:578fff&height=240&text=JIYEON%20GITHUB&animation=twinkling&fontColor=fafcff&fontSize=40)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:e3e1fe,100:578fff&height=220&text=JIYEON%20HAN&animation=twinkling&fontColor=fafcff&fontSize=40)
 
-## ✨ Contact ✨
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:j.han77055@gmail.com)
+<br />
 
-## ✨ Tech Stacks ✨
+[![Gmail](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:j.han77055@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/j-hann)
 
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=Spring%20Boot&logoColor=white)
-![JPA](https://img.shields.io/badge/JPA-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=Amazon%20AWS&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white)
+</div>
 
-## ✨ Stats ✨
+<br />
 
-![Jiyeon's GitHub Stats](https://github-readme-stats.vercel.app/api?username=j-hann&bg_color=60,eee0ff,9db9fb&title_color=ffffff&text_color=ffffff)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=j-hann&layout=compact&bg_color=60,eee0ff,9db9fb&title_color=ffffff&text_color=ffffff)
+## Tech Stack
 
-## 🌳
-## 🧩 My GitHub 3D Contribution Graph
+### Languages
 
-![GitHub 3D Contribution](https://raw.githubusercontent.com/j-hann/j-hann/main/main/profile-3d-contrib/profile-green-animate.svg)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
 
+### Backend
 
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Spring Batch](https://img.shields.io/badge/Spring%20Batch-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
+![QueryDSL](https://img.shields.io/badge/QueryDSL-009688?style=for-the-badge&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:e3e1fe,100:578fff&height=200&section=footer)
+### Database
+
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Flyway](https://img.shields.io/badge/Flyway-CC0200?style=for-the-badge&logo=flyway&logoColor=white)
+
+### Infrastructure & CI/CD
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![AWS S3](https://img.shields.io/badge/AWS%20S3-569A31?style=for-the-badge&logo=amazon-s3&logoColor=white)
+![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=for-the-badge&logo=amazon-ec2&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+
+<br />
+
+## Projects
+
+### [LocalLife](https://github.com/salayo-team)
+
+> 로컬 크리에이터와 청년을 연결하는 AI 적성 추천 기반 지역 체험 플랫폼  
+> 2025 K-Digital Training 해커톤 참가 | 예선 진 프로젝트
+
+- **체험 프로그램**
+  - 체험 프로그램 도메인 전반 설계 및 운영 로직 구현
+- **검색**
+  - QueryDSL, MySQL Full-Text Search, Ngram parser 기반 검색·정렬 구조 설계
+- **DB 관리**
+  - Flyway 기반 DB 인덱스 및 스키마 변경 이력 관리
+- **예약·결제**
+  - 예약 상태 흐름(신청·거절·취소) 및 검증 로직 설계
+  - PortOne API 연동 결제·환불·검증과 결제 이력 관리 구조 구축
+
+<br />
+
+### [Codeness](https://github.com/codeness-connect4code/codeness)
+
+> 개발자 멘토와 멘티를 연결하는 멘토링 커뮤니티 서비스
+
+- **멘토링**
+  - 멘토링 도메인 전반 설계 및 로직 구현
+- **멘토링 공고 검색**
+  - QueryDSL 기반 동적 검색을 구현하고, JMeter 부하 테스트 결과를 바탕으로 Full-Text Index 적용
+- **배치·스케줄 처리**
+  - Flyway로 인덱스 변경을 관리하고, Spring Batch로 삭제 공고 데이터 정리 및 지난 멘토링 일정 만료 처리 자동화
+  - 스케줄링 기반 미완료 결제 데이터 자동 정리 기능 구현
+- **결제**
+  - PortOne(KG이니시스) 연동 결제 생성·검증·환불 기능 구현
+  - Redisson 분산 락으로 멘토링 신청 동시성을 제어
+    
+<br />
+
+## GitHub Stats
+
+<div align="center">
+
+<img
+  width="720"
+  src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=j-hann&theme=github"
+  alt="GitHub contribution graph"
+/>
+
+<br /><br />
+
+<table>
+  <tr>
+    <td>
+      <img
+        width="320"
+        src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=j-hann&theme=github"
+        alt="GitHub statistics"
+      />
+    </td>
+    <td>
+      <img
+        width="320"
+        src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=j-hann&theme=github"
+        alt="Most used languages by commits"
+      />
+    </td>
+  </tr>
+</table>
+
+<br />
+
+<img
+  width="720"
+  src="https://github-readme-activity-graph.vercel.app/graph?username=j-hann&bg_color=ffffff&color=578fff&line=578fff&point=7aa5ff&area_color=e3e1fe&area=true&hide_border=true"
+  alt="GitHub activity graph"
+/>
+
+</div>
+
+<br />
+
+<div align="center">
+
+![footer](https://capsule-render.vercel.app/api?type=waving&color=0:e3e1fe,100:578fff&height=160&section=footer)
 
 </div>
